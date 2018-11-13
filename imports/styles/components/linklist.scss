@@ -1,0 +1,38 @@
+.linklist {
+  h2 {
+    display: none;
+  }
+  ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $linklist_default_fontsize;
+    font-weight: 200;
+  }
+  div {
+    width: 100%;
+  }
+  .link {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    background-color: $grey;
+    border: 1px solid $grey-alt;
+    .link__url {
+      font-weight: 800;
+      font-size: $linklist_url_fontsize;
+    }
+    .link__id,
+    .link__visits {
+      margin: 1rem 0 0 0;
+    }
+    .link__empty {
+      margin: 1rem 0;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+}

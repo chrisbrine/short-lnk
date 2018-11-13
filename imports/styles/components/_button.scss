@@ -1,0 +1,54 @@
+.button {
+  border-color: $purple;
+  background: transparent;
+  color: $purple;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: background .5s ease, transform .5s ease, color .5s ease;
+  text-decoration: none;
+  font-size: $button_default_fontsize;
+  &:hover {
+    background: darken($white, 10%);
+  }
+  &:active {
+    color: $grey;
+    background: $purple;
+    transform: scale(1.1);
+  }
+  &.button--purple {
+    background: $purple;
+    color: $white;
+    &:active {
+      background-color: darken($purple, 5%);
+    }
+    &:hover {
+      background-color: darken($purple, 15%);
+    }
+  }
+  &.button--white {
+    border-color: white;
+    color: white;
+  }
+  &.button--large {
+    font-size: $button_large_fontsize;
+  }
+  &.button--larger {
+    font-size: $button_larger_fontsize;
+  }
+  &.button--bold {
+    font-weight: 800;
+  }
+  &.button--spacebetween {
+    margin: 1rem 1rem 0 0;
+  }
+  &.button--extrapadding {
+    padding: 1rem;
+  }
+  &.button--fullwidth {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,14 @@
+.header {
+  color: $white;
+  background-color: $purple;
+  font-size: $privateheader_title_fontsize;
+  height: 7rem;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h2 {
+    font-size: $button_larger_fontsize;
+  }
+}
