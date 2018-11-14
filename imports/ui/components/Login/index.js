@@ -40,7 +40,7 @@ class Login extends Component {
     return (
       <div className='login'>
 
-        <Header title={this.props.title} />
+        <Header />
 
         <div className='boxed-view'>
 

@@ -48,7 +48,7 @@ class Signup extends Component {
     return (
       <div className='signup'>
 
-        <Header title={this.props.title} subtitle='Sign Up' />
+        <Header subtitle='Sign Up' />
 
         <div className='boxed-view'>
           <div className='boxed-view__box'>
